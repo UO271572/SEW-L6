@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Formulario para feedback</title>
+    <meta name="author" content="Sergio Buenaga Gutierrez">
+    <meta name="description" content="Los usuarios rellenaran un formulario">
+    <meta name="keywords" content="formulario,cliente,satisfaccion,contento,triste,insatisfecho">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Laravel</h1>
+        <nav>
+            <a title="Pagina principal" accesskey="P" tabindex="1" href="index.html">Pagina principal</a>
+            <a title="Lista" tabindex="2" accesskey="V" href="lista.html">Patron VMC</a>
+            <a title="Tabla" tabindex="3" accesskey="C" href="tabla.html">Caracteristicas generales</a>
+            <a title="Formulario" tabindex="4" accesskey="F" href="formulario.html">Formulario para lectores</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Formulario del sitio</h2>
+        <p>Por favor rellene el siguiente formulario correspondiente a la pagina web para recibir un feedback.</p>
+        <form name="datos">
+            <p><label for="mail">Email</label><input id="mail" type="email"></p>
+            <p><label for="name">Nombre</label><input id="name" type="text"></p>
+            <p><label for="date">Fecha</label><input id="date" type="date"></p>
+            <p><label for="web">Pagina web</label><input id="web" type="url"></p>
+            <fieldset>
+                <legend>¿Te ha sido útil la informacion del sitio?</legend>
+                <input type="checkbox" value="Conforme">Conforme
+                <input type="checkbox" value="No conforme">No conforme
+                <input type="checkbox" value="Sin relevancia">Sin relevancia
+            </fieldset>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+    <footer>
+        <img src="multimedia/laravelsocials.png" alt="Redes sociales">
+    </footer>
+
+</body>
+
+</html>
