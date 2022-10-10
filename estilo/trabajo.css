@@ -1,0 +1,108 @@
+/*Sergio Buenaga Gutierrez UO271572
+DESCRIPCION DE LOS ESTILOS QUE SE APLICARAN
+count the number of ID selectors in the selector (= a)
+count the number of class selectors, attributes selectors, and pseudo-classes in the selector (= b)
+count the number of type selectors and pseudo-elements in the selector (= c)
+*/
+/* a=0 b=0 c=1 -> specificity =   1 */
+body {
+    padding:0;
+    margin :0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(99, 178, 192);
+    font-family: 'Times New Roman', Times,serif;
+    font-size: 1em;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+body > section {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 75% 25%;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > section > section:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > section > section:nth-child(2){
+    grid-column: 1;
+    grid-row: 2;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > section > section:nth-child(3){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+header
+{   
+    display: grid;
+    margin: 0;
+    background-color: rgb(11, 66, 184);
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+header h1
+{   
+    text-align: center;
+    grid-row: 1;
+}
+
+/* a=0 b=0 c=2 -> specificity =   2 */
+header nav 
+{
+    text-align: center;
+    background-color: rgb(0, 128, 233);
+    grid-row: 2;
+    display: inline-block;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+nav a{
+    display: inline-block;
+    text-decoration:none;
+    padding: 1vh 2.5vw;
+    background-color: rgb(129, 177, 254);
+    color:black;
+    justify-content: center;
+    margin: 1vh 0;
+    border-radius: 15px;
+}
+/* a=0 b=1 c=2 -> specificity =   12 */
+nav a:hover{
+    background-color: rgb(28, 148, 152);
+    color:black;
+}
+
+section section{
+    border-style: double;
+    border-width: 0.3em;
+    margin: 1em;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+section p
+{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: rgb(29, 94, 214);
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+section h2
+{
+    margin: 1em;
+    padding: 0.4em;
+    background-color: rgb(31, 122, 138);
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+section video {
+    grid-row: 1;
+    grid-column: 2 / 3;
+    margin: auto;
+    display: flex;
+}
+
+/* a=0 b=0 c=0 -> specificity =   0 */
+footer
+{
+    background-color: blueviolet;
+}
