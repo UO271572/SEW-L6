@@ -57,6 +57,7 @@ header
 /* a=0 b=0 c=2 -> specificity =   2*/
 header h1
 {   
+    color: #FFF370;
     text-align: center;
     grid-row: 1;
 }
