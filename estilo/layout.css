@@ -1,0 +1,53 @@
+/*Sergio Buenaga Gutierrez UO271572
+DESCRIPCION DE LOS ESTILOS QUE SE APLICARAN
+count the number of ID selectors in the selector (= a)
+count the number of class selectors, attributes selectors, and pseudo-classes in the selector (= b)
+count the number of type selectors and pseudo-elements in the selector (= c)
+
+SOLO SE PERMITE GRID multicol Y flexvox
+
+ej para hacer una estructura con grid con una plantilla para la pagina
+body
+display:grid;
+grid-template-area: 'header header header','menu right right','menu footer footer footer';
+en las secciones llamar: header{grid-area:header}
+
+para quitar bloques anonimos div, elementos con clas habra que embolsarlos en otro elemento section, body etc
+*/
+
+/* a=0 b=0 c=2 -> specificity =   2*/
+body > main {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 65% 35%;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > main > section:nth-child(2){
+    grid-row: 2;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > main > aside{
+    grid-column: 2;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+header
+{   
+    display: grid;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+header h1
+{   
+    grid-row: 1;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+header nav 
+{
+    grid-row: 2;
+    display: inline-block;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+nav a{
+    display: inline-block;
+    justify-content: center;
+    border-radius: 1em;
+}

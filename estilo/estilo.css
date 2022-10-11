@@ -1,3 +1,149 @@
 /*Sergio Buenaga Gutierrez UO271572
 DESCRIPCION DE LOS ESTILOS QUE SE APLICARAN
+count the number of ID selectors in the selector (= a)
+count the number of class selectors, attributes selectors, and pseudo-classes in the selector (= b)
+count the number of type selectors and pseudo-elements in the selector (= c)
+
+SOLO SE PERMITE GRID multicol Y flexvox
+
+ej para hacer una estructura con grid con una plantilla para la pagina
+body
+display:grid;
+grid-template-area: 'header header header','menu right right','menu footer footer footer';
+en las secciones llamar: header{grid-area:header}
+
+para quitar bloques anonimos div, elementos con clas habra que embolsarlos en otro elemento section, body etc
 */
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(99, 178, 192);
+    font-family: 'Times New Roman', Times,serif, 'Comic Sans';
+    font-size: 1em;
+    padding:0;
+    margin :0;
+}
+/* a=0 b=1 c=3 -> specificity =   13*/
+body > main > aside{
+    margin: 1em;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+header
+{   
+    background-color: rgb(11, 66, 184);
+    color: black;
+    margin: 0;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+header h1
+{   
+    color: #FFDD4D;
+    background-color: #0E54EB;
+    text-align: center;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+dl{
+    background-color: #0C2F6E;
+    color: white;
+    margin: 1vh 1vw;
+    padding: 1em;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+header nav 
+{
+    text-align: center;
+    background-color: rgb(0, 128, 233);
+    color: black;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+nav a{
+    text-decoration:underline;
+    background-color: #217F90;
+    color:#000000;
+    margin: 1vh 1vw;
+    padding: 1vh 2.5vw;
+}
+/* a=0 b=1 c=2 -> specificity =   12 */
+nav a:hover{
+    background-color: #55BEFF;
+    color:#474747;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+main section{
+    border-style: double;
+    border-width: 0.3em;
+    margin: 1em;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+section p
+{
+    color: #FFFFFF;
+    background-color: #0C2F6E;
+    margin: 1em;
+    padding: 0.5em;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+section h2
+{
+    color: #F3F3F3;
+    background-color: #1F7A8A;
+    margin: 1em;
+    padding: 0.4em;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+table{
+    text-align: center;
+    border-style: groove;
+    margin: 1em;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+th,td{
+    border-style: solid;
+    border-width: 0.15em;
+    color: white;
+    margin: 0em;
+    padding: 0.25em;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+th{
+    background-color: #0C2F6E;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+td{
+    background-color: rgb(11, 66, 184);
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+caption{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* a=0 b=0 c=3 -> specificity =   3 */
+section h2 > table
+{
+    color: black;
+    background-color: rgb(31, 122, 138);
+    margin: 1em;
+    padding: 0.4em;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+a
+{
+    color: #FFFFFF;
+    background-color: #1101F4;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+footer
+{
+    color: black;
+    background-color: blueviolet;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+video{
+    width: 100%;
+    height: 100%;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+section form{
+    margin: 1em;
+}
