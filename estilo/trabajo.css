@@ -83,8 +83,8 @@ nav a{
     display: inline-block;
     text-decoration:underline;
     padding: 1vh 2.5vw;
-    background-color: rgb(129, 177, 254);
-    color:black;
+    background-color: #FDFDFD;
+    color:#1D79C4;
     justify-content: center;
     margin: 1vh 1vw;
     border-radius: 1em;
@@ -113,8 +113,8 @@ section h2
 {
     margin: 1em;
     padding: 0.4em;
-    color: black;
-    background-color: rgb(31, 122, 138);
+    color: #F3F3F3;
+    background-color: #1F7A8A;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 table{
