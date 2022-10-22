@@ -4,7 +4,7 @@ count the number of ID selectors in the selector (= a)
 count the number of class selectors, attributes selectors, and pseudo-classes in the selector (= b)
 count the number of type selectors and pseudo-elements in the selector (= c)
 
-SOLO SE PERMITE GRID multicol Y flexvox
+SOLO SE PERMITE GRID multicol Y flexbox
 
 ej para hacer una estructura con grid con una plantilla para la pagina
 body
@@ -18,7 +18,7 @@ para quitar bloques anonimos div, elementos con clas habra que embolsarlos en ot
 /* a=0 b=0 c=1 -> specificity =   1 */
 body {
     color: rgb(0, 0, 0);
-    background-color: rgb(99, 178, 192);
+    background-color: white;
     font-family: 'Times New Roman', Times,serif, 'Comic Sans';
     font-size: 1em;
     padding:0;
@@ -31,15 +31,15 @@ body > main > aside{
 /* a=0 b=0 c=1 -> specificity =   1 */
 header
 {   
-    background-color: #3D3D3D;
-    color: black;
+    background-color: #222831;
+    color: #EEEEEE;
     margin: 0;
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 header h1
 {   
-    color: #FFD105;
-    background-color: #3D3D3D;
+    color: #EEEEEE;
+    background-color: #222831;
     text-align: center;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
@@ -48,8 +48,8 @@ dt{
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 dl{
-    background-color: #0C2F6E;
-    color: white;
+    background-color: #00ADB5;
+    color: #EEEEEE;
     margin: 1vh 1vw;
     padding: 1em;
 }
@@ -57,21 +57,21 @@ dl{
 header nav 
 {
     text-align: center;
-    background-color: rgb(0, 128, 233);
-    color: black;
+    background-color: #393E46;
+    /*color: #E8FF38;*/
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 nav a{
     text-decoration:underline;
-    background-color: #217F90;
-    color:#000000;
+    background-color: #393E46;
+    color:#EEEEEE;
     margin: 1vh 1vw;
     padding: 1vh 2.5vw;
 }
 /* a=0 b=1 c=2 -> specificity =   12 */
 nav a:hover{
     background-color: #55BEFF;
-    color:#474747;
+    color:#EEEEEE;
 }
 /* a=0 b=0 c=2 -> specificity =   2 */
 main section{
@@ -82,31 +82,31 @@ main section{
 /* a=0 b=0 c=2 -> specificity =   2 */
 section p
 {
-    color: #FFFFFF;
-    background-color: #1B52B8;
+    color: black;
+    background-color: #00ADB5;
     margin: 1em;
     padding: 0.5em;
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 section h2
 {
-    color: #F3F3F3;
-    background-color: #1F7A8A;
+    color: #EEEEEE;
+    background-color: #393E46;
     margin: 1em;
     padding: 0.4em;
 }
 article p
 {
-    color: #FFFFFF;
-    background-color: #1B52B8   ;
+    color: #EEEEEE;
+    background-color: #00ADB5;
     margin: 1em;
     padding: 0.5em;
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 article h2
 {
-    color: #F3F3F3;
-    background-color: #1F7A8A;
+    color: #EEEEEE;
+    background-color: #393E46;
     margin: 1em;
     padding: 0.4em;
 }
@@ -130,7 +130,7 @@ th{
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 td{
-    background-color: rgb(11, 66, 184);
+    background-color:#00ADB5;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 caption{
@@ -140,7 +140,7 @@ caption{
 /* a=0 b=0 c=3 -> specificity =   3 */
 section h2 > table
 {
-    color: black;
+    color: #EEEEEE;
     background-color: rgb(31, 122, 138);
     margin: 1em;
     padding: 0.4em;
@@ -148,14 +148,14 @@ section h2 > table
 /* a=0 b=0 c=1 -> specificity =   1 */
 a
 {
-    color: #FFFFFF;
+    color: #EEEEEE;
     /*background-color: #1101F4;*/
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 footer
 {
-    color: #B8B8FF;
-    background-color: blueviolet;
+    color: white;
+    background-color: #00ADB5;
     margin: 1em;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
