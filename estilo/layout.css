@@ -22,7 +22,6 @@ body{
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 body > main {
-    
     display: grid;
     grid-auto-columns: auto;
     grid-auto-rows: auto;

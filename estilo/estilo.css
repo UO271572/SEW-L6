@@ -22,10 +22,10 @@ body {
     font-family: 'Times New Roman', Times,serif, 'Comic Sans';
     font-size: 1em;
     padding:0;
-    margin :0;
+    margin:0;
 }
 /* a=0 b=1 c=3 -> specificity =   13*/
-body > main > aside{
+body > main > article{
     margin: 1em;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
