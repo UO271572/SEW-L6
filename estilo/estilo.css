@@ -38,7 +38,7 @@ header
 /* a=0 b=0 c=2 -> specificity =   2*/
 header h1
 {   
-    color: #FFDD4D;
+    color: #FFD105;
     background-color: #3D3D3D;
     text-align: center;
 }
@@ -83,7 +83,7 @@ main section{
 section p
 {
     color: #FFFFFF;
-    background-color: #0C2F6E;
+    background-color: #1B52B8;
     margin: 1em;
     padding: 0.5em;
 }
@@ -98,7 +98,7 @@ section h2
 article p
 {
     color: #FFFFFF;
-    background-color: #0C2F6E;
+    background-color: #1B52B8   ;
     margin: 1em;
     padding: 0.5em;
 }
