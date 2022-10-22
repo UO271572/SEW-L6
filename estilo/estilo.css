@@ -25,7 +25,7 @@ body {
     margin:0;
 }
 /* a=0 b=1 c=3 -> specificity =   13*/
-body > main > article{
+body > main > aside{
     margin: 1em;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
@@ -39,8 +39,12 @@ header
 header h1
 {   
     color: #FFDD4D;
-   /* background-color: #0E54EB;*/
+    background-color: rgb(11, 66, 184);
     text-align: center;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+dt{
+    text-decoration: underline;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 dl{
@@ -54,6 +58,7 @@ header nav
 {
     text-align: center;
     background-color: rgb(0, 128, 233);
+    color: black;
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 nav a{

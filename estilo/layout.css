@@ -33,7 +33,7 @@ body > main > section:nth-child(2){
     grid-row: 2;
 }
 /* a=0 b=1 c=3 -> specificity =   13*/
-body > main > section:nth-child(3){
+body > main > aside:nth-child(3){
     min-width: 10em;
     max-height: 12em;
     grid-column: 2;
