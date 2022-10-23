@@ -74,7 +74,7 @@ nav a{
 /* a=0 b=1 c=2 -> specificity =   12 */
 nav a:hover{
     background-color: #55BEFF;
-    color:#EEEEEE;
+    color:black;
 }
 /* a=0 b=0 c=2 -> specificity =   2 */
 main section{
@@ -87,7 +87,6 @@ main section{
 /* a=0 b=0 c=2 -> specificity =   2 */
 section p
 {
-    
     color: black;
     background-color: #00ADB5;
     margin: 0;
@@ -98,7 +97,7 @@ section p
 section h2
 {
     color: #EEEEEE;
-    background-color: #393E46;
+    background-color: #222831;
     margin: 0em;
     padding: 0.4em;
 }
@@ -114,7 +113,7 @@ article p
 article h2
 {
     color: #EEEEEE;
-    background-color: #393E46;
+    background-color: #222831;
     margin: 0em;
     padding: 0.7em;
 }
