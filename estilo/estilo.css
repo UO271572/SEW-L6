@@ -96,8 +96,8 @@ section p
 /* a=0 b=0 c=2 -> specificity =   2*/
 section h2
 {
-    color: #BFBFBF;
-    background-color: #171921;
+    color: #FFFFFF;
+    background-color: #284C86;
     margin: 0em;
     padding: 0.4em;
 }
@@ -112,8 +112,8 @@ article p
 /* a=0 b=0 c=2 -> specificity =   2*/
 article h2
 {
-    color: #BFBFBF;
-    background-color: #171921;
+    color: #FFFFFF;
+    background-color: #284C86;
     margin: 0em;
     padding: 0.7em;
 }
