@@ -40,7 +40,7 @@ class GeoLocalizacion {
     }
 
     verPosicion(){
-        var datos='<p>'+ this.mensaje + '</p>'; 
+        var datos='<h2>Localizacion</h2><p>'+ this.mensaje + '</p>'; 
         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
         datos+='<p>Precision de la latitud y longitud: '+ this.precision +' metros</p>';
