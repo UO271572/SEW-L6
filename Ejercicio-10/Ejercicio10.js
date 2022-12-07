@@ -18,7 +18,7 @@ class Trader{
             success: function(datos){
                 var date = datos['data']['date'];
                 var result = datos['data']['result'];
-                $("article").html("<p>Fecha: "+date+" Precio en euros: "+result+"</p>")
+                $("article").html("<h2>Informacion adicional:</h2><p>Fecha: "+date+" Precio en euros: "+result+"</p>")
             },
             error:function(){
                 $("section:last-child").append("<p>Tenemos problemas para obtener el JSON</p>");

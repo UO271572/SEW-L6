@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Gas Natural</title>
+    <meta name="author" content="Sergio Buenaga Gutierrez">
+    <meta name="description" content="Gas natural">
+    <meta name="keywords" content="Gas natural">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css">
+    <script src="Ejercicio10.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>var trader = new Trader()</script>
+    <script>trader.cargarDatos()</script>
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Precio del natural gas en el mercado internacional</h1>
+    </header>
+    <main>
+        <section>
+            <h2>NATURAL GAS</h2>
+            <p>A continuacion se mostrara el precio del gas natural convertido a la unidad monetaria EUR(comparandola antes con el tipo de moneda que seleccionará a continuacion), para ello debe seleccionar la unidad monetaria y muestra la fecha en la que se produjo la actualizacion.</p>
+            <label for="moneda">Selecciona la cantidad</label>
+            <input type="number" min="1" value="1">
+            <label for="moneda">Selecciona la moneda/tipo para calcular el importe final</label>
+            <select name="moneda" id="moneda">
+            <option value="ADA">ADA</option>
+<option value="AED">AED</option>
+<option value="AFN">AFN</option>
+<option value="ALL">ALL</option>
+<option value="ALU">ALU</option>
+<option value="AMD">AMD</option>
+<option value="ANG">ANG</option>
+<option value="AOA">AOA</option>
+<option value="ARS">ARS</option>
+<option value="AUD">AUD</option>
+<option value="AWG">AWG</option>
+<option value="AZN">AZN</option>
+<option value="BAM">BAM</option>
+<option value="BBD">BBD</option>
+<option value="BCH">BCH</option>
+<option value="BDT">BDT</option>
+<option value="BGN">BGN</option>
+<option value="BHD">BHD</option>
+<option value="BIF">BIF</option>
+<option value="BMD">BMD</option>
+<option value="BND">BND</option>
+<option value="BOB">BOB</option>
+<option value="BRENTOIL">BRENTOIL</option>
+<option value="BRL">BRL</option>
+<option value="BSD">BSD</option>
+<option value="BTC">BTC</option>
+<option value="BTN">BTN</option>
+<option value="BWP">BWP</option>
+<option value="BYN">BYN</option>
+<option value="BYR">BYR</option>
+<option value="BZD">BZD</option>
+<option value="CAD">CAD</option>
+<option value="CANO">CANO</option>
+<option value="CDF">CDF</option>
+<option value="CHF">CHF</option>
+<option value="CLF">CLF</option>
+<option value="CLP">CLP</option>
+<option value="CNH">CNH</option>
+<option value="CNY">CNY</option>
+<option value="COAL">COAL</option>
+<option value="COCOA">COCOA</option>
+<option value="COFFEE">COFFEE</option>
+<option value="COP">COP</option>
+<option value="CORN">CORN</option>
+<option value="COTTON">COTTON</option>
+<option value="CPO">CPO</option>
+<option value="CRC">CRC</option>
+<option value="CUC">CUC</option>
+<option value="CVE">CVE</option>
+<option value="CZK">CZK</option>
+<option value="DJF">DJF</option>
+<option value="DKK">DKK</option>
+<option value="DOP">DOP</option>
+<option value="DZD">DZD</option>
+<option value="EEK">EEK</option>
+<option value="EGP">EGP</option>
+<option value="ERN">ERN</option>
+<option value="ETB">ETB</option>
+<option value="ETH">ETH</option>
+<option value="ETHANOL">ETHANOL</option>
+<option value="EUR">EUR</option>
+<option value="FJD">FJD</option>
+<option value="FKP">FKP</option>
+<option value="GBP">GBP</option>
+<option value="GEL">GEL</option>
+<option value="GGP">GGP</option>
+<option value="GHS">GHS</option>
+<option value="GIP">GIP</option>
+<option value="GMD">GMD</option>
+<option value="GNF">GNF</option>
+<option value="GTQ">GTQ</option>
+<option value="GYD">GYD</option>
+<option value="HKD">HKD</option>
+<option value="HNL">HNL</option>
+<option value="HRK">HRK</option>
+<option value="HTG">HTG</option>
+<option value="HUF">HUF</option>
+<option value="IDR">IDR</option>
+<option value="ILS">ILS</option>
+<option value="IMP">IMP</option>
+<option value="INR">INR</option>
+<option value="IQD">IQD</option>
+<option value="IRD">IRD</option>
+<option value="ISK">ISK</option>
+<option value="JEP">JEP</option>
+<option value="JMD">JMD</option>
+<option value="JOD">JOD</option>
+<option value="JPY">JPY</option>
+<option value="KCH23">KCH23</option>
+<option value="KCK23">KCK23</option>
+<option value="KCN22">KCN22</option>
+<option value="KCN23">KCN23</option>
+<option value="KCU22">KCU22</option>
+<option value="KCU23">KCU23</option>
+<option value="KCZ22">KCZ22</option>
+<option value="KES">KES</option>
+<option value="KGS">KGS</option>
+<option value="KHR">KHR</option>
+<option value="KMF">KMF</option>
+<option value="KRW">KRW</option>
+<option value="KWD">KWD</option>
+<option value="KYD">KYD</option>
+<option value="KZT">KZT</option>
+<option value="LAK">LAK</option>
+<option value="LBP">LBP</option>
+<option value="LCAT">LCAT</option>
+<option value="LCO">LCO</option>
+<option value="LHOG">LHOG</option>
+<option value="LINK">LINK</option>
+<option value="LKR">LKR</option>
+<option value="LRD">LRD</option>
+<option value="LSL">LSL</option>
+<option value="LTC">LTC</option>
+<option value="LTL">LTL</option>
+<option value="LUMBER">LUMBER</option>
+<option value="LVL">LVL</option>
+<option value="LYD">LYD</option>
+<option value="MAD">MAD</option>
+<option value="MDL">MDL</option>
+<option value="MGA">MGA</option>
+<option value="MKD">MKD</option>
+<option value="MMK">MMK</option>
+<option value="MNT">MNT</option>
+<option value="MOP">MOP</option>
+<option value="MRO">MRO</option>
+<option value="MTL">MTL</option>
+<option value="MUR">MUR</option>
+<option value="MVR">MVR</option>
+<option value="MWK">MWK</option>
+<option value="MXN">MXN</option>
+<option value="MYR">MYR</option>
+<option value="MZN">MZN</option>
+<option value="NAD">NAD</option>
+<option value="NG">NG</option>
+<option value="NGN">NGN</option>
+<option value="NI">NI</option>
+<option value="NIO">NIO</option>
+<option value="NOK">NOK</option>
+<option value="NPR">NPR</option>
+<option value="NZD">NZD</option>
+<option value="OAT">OAT</option>
+<option value="OMR">OMR</option>
+<option value="PAB">PAB</option>
+<option value="PEN">PEN</option>
+<option value="PGK">PGK</option>
+<option value="PHP">PHP</option>
+<option value="PKR">PKR</option>
+<option value="PLN">PLN</option>
+<option value="PYG">PYG</option>
+<option value="QAR">QAR</option>
+<option value="RICE">RICE</option>
+<option value="RMF23">RMF23</option>
+<option value="RMH23">RMH23</option>
+<option value="RMN22">RMN22</option>
+<option value="RMU22">RMU22</option>
+<option value="RMX22">RMX22</option>
+<option value="ROBUSTA">ROBUSTA</option>
+<option value="RON">RON</option>
+<option value="RSD">RSD</option>
+<option value="RUB">RUB</option>
+<option value="RUBBER">RUBBER</option>
+<option value="RUTH">RUTH</option>
+<option value="RWF">RWF</option>
+<option value="SAR">SAR</option>
+<option value="SBD">SBD</option>
+<option value="SBH23">SBH23</option>
+<option value="SBK23">SBK23</option>
+<option value="SBN22">SBN22</option>
+<option value="SBV22">SBV22</option>
+<option value="SCR">SCR</option>
+<option value="SEK">SEK</option>
+<option value="SGD">SGD</option>
+<option value="SHP">SHP</option>
+<option value="SLL">SLL</option>
+<option value="SOS">SOS</option>
+<option value="SOYBEAN">SOYBEAN</option>
+<option value="SRD">SRD</option>
+<option value="SSP">SSP</option>
+<option value="STD">STD</option>
+<option value="SUGAR">SUGAR</option>
+<option value="SVC">SVC</option>
+<option value="SZL">SZL</option>
+<option value="THB">THB</option>
+<option value="TIN">TIN</option>
+<option value="TJS">TJS</option>
+<option value="TMT">TMT</option>
+<option value="TND">TND</option>
+<option value="TOP">TOP</option>
+<option value="TRY">TRY</option>
+<option value="TTD">TTD</option>
+<option value="TWD">TWD</option>
+<option value="TZS">TZS</option>
+<option value="UAH">UAH</option>
+<option value="UGX">UGX</option>
+<option value="UNI">UNI</option>
+<option value="USD">USD</option>
+<option value="UYU">UYU</option>
+<option value="UZS">UZS</option>
+<option value="VEF">VEF</option>
+<option value="VES">VES</option>
+<option value="VND">VND</option>
+<option value="VUV">VUV</option>
+<option value="WHEAT">WHEAT</option>
+<option value="WST">WST</option>
+<option value="WTIOIL">WTIOIL</option>
+<option value="XAF">XAF</option>
+<option value="XAG">XAG</option>
+<option value="XAU">XAU</option>
+<option value="XCD">XCD</option>
+<option value="XCU">XCU</option>
+<option value="XDR">XDR</option>
+<option value="XLM">XLM</option>
+<option value="XOF">XOF</option>
+<option value="XPD">XPD</option>
+<option value="XPF">XPF</option>
+<option value="XPT">XPT</option>
+<option value="XRH">XRH</option>
+<option value="XRP">XRP</option>
+<option value="XRP2">XRP2</option>
+<option value="YER">YER</option>
+<option value="ZAR">ZAR</option>
+<option value="ZMK">ZMK</option>
+<option value="ZMW">ZMW</option>
+<option value="ZNC">ZNC</option>
+<option value="ZWL">ZWL</option>
+<option value="ZWN2">ZWN2</option>
+<option value="ZWU2">ZWU2</option>
+</select>
+            <input type="button" name="Buscar" onclick="trader.buscar()" value="Buscar">
+            <article><h2>Informacion adicional:</h2><p>Fecha: 2022-12-07 Precio en euros: 0.30357197363514826</p></article>
+        </section>
+    </main>
+
+</body></html>
