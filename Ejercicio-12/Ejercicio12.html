@@ -14,7 +14,8 @@
 <body>
     <h1>Datos del archivo a seleccionar</h1>
     <p>Obtenemos los datos del archivo seleccionado acontinuacion.</p>
-    <input type="file" onchange="lector.leerArchivoTexto(this.files)" multiple>
+    <label for="archivo">Archivo:</label>
+    <input id ="archivo" type="file" onchange="lector.leerArchivoTexto(this.files)" multiple>
     <p>Archivos seleccionados: <span>0</span></p>
     <p>Tamaño total: <span>0</span></p>
     <p></p>
