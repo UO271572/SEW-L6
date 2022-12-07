@@ -24,11 +24,10 @@
         <section>
             <h2>NATURAL GAS</h2>
             <p>A continuacion se mostrara el precio del gas natural convertido a la unidad monetaria EUR(comparandola antes con el tipo de moneda que seleccionará a continuacion), para ello debe seleccionar la unidad monetaria y muestra la fecha en la que se produjo la actualizacion.</p>
-            <label for="moneda">Selecciona la cantidad</label>
-            <input type="number" min="1" value="1">
+            <label for="cantidad">Selecciona la cantidad</label>
+            <input type="number" id = "cantidad" min="1" value="1">
             <label for="moneda">Selecciona la moneda/tipo para calcular el importe final</label>
-            <select name="moneda" id="moneda">
-            </select>
+            <select name="moneda" id="moneda"></select>
             <input type="button" name="Buscar" onclick="trader.buscar()" value="Buscar">
             <article><h2>Informacion adicional:</h2></article>
         </section>
