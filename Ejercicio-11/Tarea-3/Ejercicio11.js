@@ -55,7 +55,7 @@ class Geolocalizacion {
         var ubicacion=document.getElementsByTagName('section')[0];
         //AIzaSyCK6oBSwjYXcUJtGwgQN9-c0EbeDvh8_Lw
         //AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU
-        var apiKey = "&key=AIzaSyCK6oBSwjYXcUJtGwgQN9-c0EbeDvh8_Lw";
+        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
         //URL: obligatoriamente https
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
         //ParÃ¡metros
@@ -79,7 +79,7 @@ class Geolocalizacion {
         //style (opcional)
         var sensor = "&sensor=false";
         this.imagenMapa = url + centro + zoom + size + mapTypeID + marcador + sensor + apiKey;
-        ubicacion.innerHTML = "<img src='"+this.imagenMapa+"'/>";
+        ubicacion.innerHTML = "<h2>Mapa</h2><img alt='a' src='"+this.imagenMapa+"'/>";
     }
 }
 var miPosicion = new Geolocalizacion();
