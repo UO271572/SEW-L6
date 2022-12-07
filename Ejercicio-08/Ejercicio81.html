@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>METEREOLOGIA</title>
+    <meta name="author" content="Sergio Buenaga Gutierrez">
+    <meta name="description" content="Metereologia">
+    <meta name="keywords" content="Laravel,PHP,framework,codigo abierto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio8.css">
+    <script src="Ejercicio8.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>var meteo = new Meteo()</script>
+    <script>meteo.cargarOviedo()</script>
+    <script>meteo.cargarLyon()</script>
+    <script>meteo.cargarValladolid()</script>
+    <script>meteo.cargarBarcelona()</script>
+    <script>meteo.cargarParis()</script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Muestras del tiempo </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Oviedo</h2>
+            <p>Se procedera a mostrar la informacion climatica de Oviedo actualmente.</p>
+        <ul><li>Ciudad: Oviedo</li><li>Pai­s: ES</li><li>Latitud: 43.3603 grados</li><li>Longitud: -5.8448 grados</li><li>Temperatura: 10.11 grados Celsius</li><li>Temperatura maxima: 11.71 grados Celsius</li><li>Temperatura minima: 8.49 grados Celsius</li><li>Presionn: 1014 milibares</li><li>Humedad: 97 %</li><li>Amanece a las: 8:42:11</li><li>Oscurece a las: 17:47:42</li><li>Direccion del viento: 172 grados</li><li>Velocidad del viento: 1.06 metros/segundo</li><li>Hora de la medida: 3:18:48</li><li>Fecha de la medida: 7/12/2022</li><li>Descripcion: muy nuboso</li><li>Visibilidad: 10000 metros</li><li>Nubosidad: 73 %</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Lyon</h2>
+            <p>Se procedera a mostrar la informacion climatica de Lyon actualmente.</p>
+        <ul><li>Ciudad: Arrondissement de Lyon</li><li>Pai­s: FR</li><li>Latitud: 45.75 grados</li><li>Longitud: 4.5833 grados</li><li>Temperatura: 0.34 grados Celsius</li><li>Temperatura maxima: 0.75 grados Celsius</li><li>Temperatura minima: 0.03 grados Celsius</li><li>PresiÃ³n: 1019 milibares</li><li>Humedad: 96 %</li><li>Amanece a las: 8:08:44</li><li>Oscurece a las: 16:57:43</li><li>DirecciÃ³n del viento: 305 grados</li><li>Velocidad del viento: 0.92 metros/segundo</li><li>Hora de la medida: 3:19:00</li><li>Fecha de la medida: 7/12/2022</li><li>DescripciÃ³n: muy nuboso</li><li>Visibilidad: 10000 metros</li><li>Nubosidad: 72 %</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Valladolid</h2>
+            <p>Se procedera a mostrar la informacion climatica de Valladolid actualmente.</p>
+        <ul><li>Ciudad: Valladolid</li><li>Pai­s: ES</li><li>Latitud: 41.5833 grados</li><li>Longitud: -4.6667 grados</li><li>Temperatura: 7.05 grados Celsius</li><li>Temperatura maxima: 7.94 grados Celsius</li><li>Temperatura minima: 6.84 grados Celsius</li><li>PresiÃ³n: 1015 milibares</li><li>Humedad: 81 %</li><li>Amanece a las: 8:31:47</li><li>Oscurece a las: 17:48:40</li><li>DirecciÃ³n del viento: 22 grados</li><li>Velocidad del viento: 1.29 metros/segundo</li><li>Hora de la medida: 3:20:48</li><li>Fecha de la medida: 7/12/2022</li><li>DescripciÃ³n: nubes</li><li>Visibilidad: 10000 metros</li><li>Nubosidad: 100 %</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Barcelona</h2>
+            <p>Se procedera a mostrar la informacion climatica de Barcelona actualmente.</p>
+        <ul><li>Ciudad: Barcelona</li><li>Pai­s: ES</li><li>Latitud: 41.3888 grados</li><li>Longitud: 2.159 grados</li><li>Temperatura: 10.16 grados Celsius</li><li>Temperatura maxima: 11.29 grados Celsius</li><li>Temperatura minima: 6.57 grados Celsius</li><li>PresiÃ³n: 1014 milibares</li><li>Humedad: 87 %</li><li>Amanece a las: 8:03:52</li><li>Oscurece a las: 17:21:58</li><li>DirecciÃ³n del viento: 330 grados</li><li>Velocidad del viento: 3.6 metros/segundo</li><li>Hora de la medida: 3:22:18</li><li>Fecha de la medida: 7/12/2022</li><li>DescripciÃ³n: cielo claro</li><li>Visibilidad: 8000 metros</li><li>Nubosidad: 9 %</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/01n.png"></li></ul></section>
+        <section>
+            <h2>Paris</h2>
+            <p>Se procedera a mostrar la informacion climatica de Paris actualmente.</p>
+        <ul><li>Ciudad: Paris</li><li>Pai­s: FR</li><li>Latitud: 48.8534 grados</li><li>Longitud: 2.3488 grados</li><li>Temperatura: 1.09 grados Celsius</li><li>Temperatura maxima: 2.1 grados Celsius</li><li>Temperatura minima: -0.03 grados Celsius</li><li>PresiÃ³n: 1021 milibares</li><li>Humedad: 97 %</li><li>Amanece a las: 8:29:47</li><li>Oscurece a las: 16:54:32</li><li>DirecciÃ³n del viento: 0 grados</li><li>Velocidad del viento: 1.54 metros/segundo</li><li>Hora de la medida: 3:20:02</li><li>Fecha de la medida: 7/12/2022</li><li>DescripciÃ³n: bruma</li><li>Visibilidad: 500 metros</li><li>Nubosidad: 100 %</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/50n.png"></li></ul></section>
+    </main>
+
+
+</body></html>

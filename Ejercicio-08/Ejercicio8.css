@@ -9,7 +9,6 @@ body{
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 body > main {
-    display: flexbox;
     flex-direction: column;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
@@ -49,18 +48,4 @@ h2
     border-width: 1em;
     margin: 0em;
     padding: 0.5em;
-}
-/* a=0 b=0 c=1 -> specificity =   1 */
-img{
-    margin: 1em;
-}
-/* a=0 b=0 c=1 -> specificity =   1 */
-footer{
-    width: 100%;
-    padding: 1;
-    min-height: 11em;
-    grid-row-end: auto;
-    color: black;
-    background-color: #00ADB5;
-    margin: 0em;
 }
