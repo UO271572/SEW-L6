@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Sergio Buenaga Gutierrez" />
+    <meta name="description" content="Aplicacion de busqueda de ciudad, la cual muestra el mapa de la misma, asi como informacion." />
+    <meta name="keywords" content="mapa, dinamico" />
+    <title>Desarrollo con varias APIs</title>
+    <link href="Ejercicio11.css" rel="stylesheet"/>
+    <script src="Ejercicio11.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Web localizacion e informacion adicional</h1>
+    <main></main>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK6oBSwjYXcUJtGwgQN9-c0EbeDvh8_Lw&callback=initMap"></script>
+
+    <h2>Informacion de la ubicacion</h2>
+    <p>La informacion se mostrara a continuacion junto con el clima de hoy</p>
+    <p>
+        <label for="ciudad">Ubicacion:</label>
+        <input type="text" name="ciudad"/>
+        <input type="submit" onclick="loader.consultarCiudad();" value="Buscar"/>
+    </p>
+    <section>
+    </section>
+</body>
+</html>

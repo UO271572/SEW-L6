@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Sergio Buenaga Gutierrez" />
+    <meta name="description" content="Obtener datos del archivo seleccionado" />
+    <meta name="keywords" content="mapa, dinamico" />
+    <title>Carga de archivos Kml</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="Ejercicio14.css" rel="stylesheet"/>
+    <script src="Ejercicio14.js"></script>
+    <script>lector.listener()</script>
+</head>
+<body>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK6oBSwjYXcUJtGwgQN9-c0EbeDvh8_Lw&callback=lector.initMap"></script>
+    <main></main>
+    <h1 onclick="lector.toggleFullScreen(document.documentElement)"
+    ondrop="lector.drop_handler(event)" ondragover="lector.dragover_handler(event)">Geolocalizacion de un archivo kml</h1>
+    <p>Obtenemos los datos del archivo seleccionado acontinuacion.Haciendo click en el titulo se obtendra en pantalla completa.
+    </p>
+    <input type="file" onchange="lector.leerArchivoKML(this.files)">
+</body>
+</html>

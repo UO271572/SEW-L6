@@ -1,0 +1,52 @@
+/* a=0 b=0 c=1 -> specificity =   1 */
+body{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: 'Times New Roman', Times,serif, 'Comic Sans';
+    font-size: 1em;
+    padding:0;
+    margin:0;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+body > main {
+    display: flexbox;
+    flex-direction: column;
+}
+/* a=0 b=0 c=1 -> specificity =   1 */
+header
+{   
+    background-color: #222831;
+    color: #EEEEEE;
+    margin: 0;
+    display: grid;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+h1
+{   
+    color: #EEEEEE;
+    background-color: #222831;
+    text-align: center;
+    font-size: 2.5em;
+}
+section{
+    color: black;
+    background-color: #00ADB5;
+}
+/* a=0 b=0 c=2 -> specificity =   2 */
+p
+{
+    color: black;
+    background-color: #00ADB5;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+/* a=0 b=0 c=2 -> specificity =   2*/
+h2
+{
+    color: #3D3D3D;
+    background-color: #24FF3D;
+    border-width: 1em;
+    margin: 0em;
+    padding: 0.5em;
+}

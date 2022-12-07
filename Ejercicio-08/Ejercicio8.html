@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8"/>
+    <title>METEREOLOGIA</title>
+    <meta name="author" content="Sergio Buenaga Gutierrez"/>
+    <meta name="description" content="Hablaremos sobre Laravel, un framework de codigo abierto para desarrollar en PHP"/>
+    <meta name="keywords" content="Laravel,PHP,framework,codigo abierto"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio8.css"/>
+    <script src="Ejercicio8.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>var meteo = new Meteo()</script>
+    <script>meteo.cargarOviedo()</script>
+    <script>meteo.cargarLyon()</script>
+    <script>meteo.cargarValladolid()</script>
+    <script>meteo.cargarBarcelona()</script>
+    <script>meteo.cargarParis()</script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Muestras del tiempo </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Oviedo</h2>
+            <p>Se procedera a mostrar la informacion climatica de Oviedo actualmente.</p>
+        </section>
+        <section>
+            <h2>Lyon</h2>
+            <p>Se procedera a mostrar la informacion climatica de Lyon actualmente.</p>
+        </section>
+        <section>
+            <h2>Valladolid</h2>
+            <p>Se procedera a mostrar la informacion climatica de Valladolid actualmente.</p>
+        </section>
+        <section>
+            <h2>Barcelona</h2>
+            <p>Se procedera a mostrar la informacion climatica de Barcelona actualmente.</p>
+        </section>
+        <section>
+            <h2>Paris</h2>
+            <p>Se procedera a mostrar la informacion climatica de Paris actualmente.</p>
+        </section>
+    </main>
+    <footer>
+        <img src="multimedia/laravelsocials.png" alt="Redes sociales"/>
+        <address>Para mas informacion personalizada pincha <a href="mailto:UO271572@uniovi.es">aquí</a>.</address>
+    </footer>
+</body>
+
+</html>

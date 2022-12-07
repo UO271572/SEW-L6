@@ -1,0 +1,21 @@
+cambiar la secction a un formulario(para practicas de php) 
+<form action="#" method="post">
+	<input type="text" value="<?php echo$calc->getPantalla()">
+	<input type="submit" name="botonX">
+...
+</form>
+	
+
+
+<?php
+session.start()
+class{}
+1-manejo de sesion (comprobar si ya habia una calculadora ya creada) if(isset($session['....']))
+2-manejo de pulsacion () 
+if(count($.post)>0
+	if(isset($.post['botonNombre']) $calc->digit(7)
+
+para guardar valores para la siguiente sesion y asi no tener mas calculadoras.
+$session['nombrecalculadora'] = $calc
+al pulsar el siguiente boton, mirara otra vez el codigo y comp
+robara que exista el item.

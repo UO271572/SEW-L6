@@ -1,0 +1,248 @@
+{
+    "type": "FeatureCollection",
+    "features":[
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.587750454882339,42.58378069349824,0]
+            },
+            "properties": {
+                "name": "Pablo nacimiento"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-4.741176777954699,41.643777379048075,0]
+            },
+            "properties": {
+              "name": "Pablo residencia"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [2.259217945642413,48.81104412080502,0]
+            },
+            "properties": {
+              "name": "Risto nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [4.8758589359738105,45.74641168677539,0]
+            },
+            "properties": {
+              "name": "Risto residencia"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [7.035723445540587,43.60467082383504,0]
+            },
+            "properties": {
+              "name": "Charles nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [7.035723445540587,43.60467082383504,0]
+            },
+            "properties": {
+              "name": "Charles residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [2.1249468262940967,41.40164699766722,0]
+            },
+            "properties": {
+              "name": "Charles nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [2.1249468262940967,41.40164699766722,0]
+            },
+            "properties": {
+              "name": "Charles residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.673896457382607,40.947276319501576,0]
+            },
+            "properties": {
+              "name": "Marta nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.965679477848744,37.37452863427277,0]
+            },
+            "properties": {
+              "name": "Marta residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.587750454882339,42.58378069349824,0]
+            },
+            "properties": {
+              "name": "Rafa nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.965679477848744,37.37452863427277,0]
+            },
+            "properties": {
+              "name": "Rafa residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.587750454882339,42.58378069349824,0]
+            },
+            "properties": {
+              "name": "Joaquin nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.965679477848744,37.37452863427277,0]
+            },
+            "properties": {
+              "name": "Joaquin residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.849154952690233,43.36880577120749,0]
+            },
+            "properties": {
+              "name": "Marta nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [7.035723445540587,43.60467082383504,0]
+            },
+            "properties": {
+              "name": "Marta residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.587750454882339,42.58378069349824,0]
+            },
+            "properties": {
+              "name": "Luismi nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.849154952690233,43.36880577120749,0]
+            },
+            "properties": {
+              "name": "Luismi residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [4.8758589359738105,45.74641168677539,0]
+            },
+            "properties": {
+              "name": "Turez nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-5.587750454882339,42.58378069349824,0]
+            },
+            "properties": {
+              "name": "Turez residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [2.259217945642413,48.81104412080502,0]
+            },
+            "properties": {
+              "name": "Manu nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [2.259217945642413,48.81104412080502,0]
+            },
+            "properties": {
+              "name": "Manu residencia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-3.7159995162888815,40.36685032559816,0]
+            },
+            "properties": {
+              "name": "Fulgencio nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-3.7159995162888815,40.36685032559816,0]
+            },
+            "properties": {
+              "name": "Fulgencio residencia"
+            }
+        }
+    ]
+}
