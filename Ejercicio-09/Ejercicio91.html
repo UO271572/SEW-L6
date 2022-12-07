@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>METEREOLOGIA</title>
+    <meta name="author" content="Sergio Buenaga Gutierrez">
+    <meta name="description" content="Hablaremos sobre Laravel, un framework de codigo abierto para desarrollar en PHP">
+    <meta name="keywords" content="Laravel,PHP,framework,codigo abierto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css">
+    <script src="Ejercicio9.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>var meteo = new Meteo()</script>
+    <script>meteo.cargarOviedo()</script>
+    <script>meteo.cargarValladolid()</script>
+    <script>meteo.cargarBarcelona()</script>
+    <script>meteo.cargarParis()</script>
+    <script>meteo.cargarLyon()</script>
+    
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Muestras del tiempo </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Oviedo</h2>
+            <p>Se procedera a mostrar la informacion climatica de Oviedo actualmente.</p>
+        <ul><li>Numero de elementos del XML: 19</li><li>Ciudad: Oviedo</li><li>Longitud: -5.8448 grados</li><li>Latitud: 43.3603 grados</li><li>Pais: ES</li><li>Amanece a las: 8:42:11</li><li>Oscurece a las: 17:47:42</li><li>Temperatura: 9.95 grados Celsius</li><li>Temperatura minima: 8.49 grados Celsius</li><li>Temperatura maxima: 12.27 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 97 %</li><li>Presionn: 1014 hPa</li><li>Velocidad del viento: 1.06 metros/segundo</li><li>Nombre del viento: Calm</li><li>Direccionn del viento: 172 grados</li><li>Codigo del viento: S</li><li>Nombre del viento: South</li><li>Nubosidad: 73</li><li>Nombre nubosidad: broken clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitacion valor: undefined</li><li>Precipitacion modo: no</li><li>Descripcionn: muy nuboso</li><li>Hora de la medida: 3:22:57</li><li>Fecha de la medida: 7/12/2022</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Lyon</h2>
+            <p>Se procedera a mostrar la informacion climatica de Lyon actualmente.</p>
+        <ul><li>Numero de elementos del XML: 19</li><li>Ciudad: Arrondissement de Lyon</li><li>Longitud: 4.5833 grados</li><li>Latitud: 45.75 grados</li><li>Pais: FR</li><li>Amanece a las: 8:08:44</li><li>Oscurece a las: 16:57:43</li><li>Temperatura: 0.34 grados Celsius</li><li>Temperatura minima: 0.03 grados Celsius</li><li>Temperatura maxima: 0.75 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 96 %</li><li>Presionn: 1019 hPa</li><li>Velocidad del viento: 0.92 metros/segundo</li><li>Nombre del viento: Calm</li><li>Direccionn del viento: 305 grados</li><li>Codigo del viento: NW</li><li>Nombre del viento: Northwest</li><li>Nubosidad: 72</li><li>Nombre nubosidad: broken clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitacion valor: undefined</li><li>Precipitacion modo: no</li><li>Descripcionn: muy nuboso</li><li>Hora de la medida: 3:23:26</li><li>Fecha de la medida: 7/12/2022</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Valladolid</h2>
+            <p>Se procedera a mostrar la informacion climatica de Valladolid actualmente.</p>
+        <ul><li>Numero de elementos del XML: 19</li><li>Ciudad: Valladolid</li><li>Longitud: -4.6667 grados</li><li>Latitud: 41.5833 grados</li><li>Pais: ES</li><li>Amanece a las: 8:31:47</li><li>Oscurece a las: 17:48:40</li><li>Temperatura: 7.05 grados Celsius</li><li>Temperatura minima: 6.84 grados Celsius</li><li>Temperatura maxima: 7.94 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 81 %</li><li>Presionn: 1015 hPa</li><li>Velocidad del viento: 1.29 metros/segundo</li><li>Nombre del viento: Calm</li><li>Direccionn del viento: 22 grados</li><li>Codigo del viento: NNE</li><li>Nombre del viento: North-northeast</li><li>Nubosidad: 100</li><li>Nombre nubosidad: overcast clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitacion valor: undefined</li><li>Precipitacion modo: no</li><li>Descripcionn: nubes</li><li>Hora de la medida: 3:26:00</li><li>Fecha de la medida: 7/12/2022</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/04n.png"></li></ul></section>
+        <section>
+            <h2>Barcelona</h2>
+            <p>Se procedera a mostrar la informacion climatica de Barcelona actualmente.</p>
+        <ul><li>Numero de elementos del XML: 19</li><li>Ciudad: Barcelona</li><li>Longitud: 2.159 grados</li><li>Latitud: 41.3888 grados</li><li>Pais: ES</li><li>Amanece a las: 8:03:52</li><li>Oscurece a las: 17:21:58</li><li>Temperatura: 10.09 grados Celsius</li><li>Temperatura minima: 6.57 grados Celsius</li><li>Temperatura maxima: 11.06 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 87 %</li><li>Presionn: 1014 hPa</li><li>Velocidad del viento: 3.6 metros/segundo</li><li>Nombre del viento: Gentle Breeze</li><li>Direccionn del viento: 330 grados</li><li>Codigo del viento: NNW</li><li>Nombre del viento: North-northwest</li><li>Nubosidad: 9</li><li>Nombre nubosidad: clear sky</li><li>Visibilidad: 8000 metros</li><li>Precipitacion valor: undefined</li><li>Precipitacion modo: no</li><li>Descripcionn: cielo claro</li><li>Hora de la medida: 3:24:50</li><li>Fecha de la medida: 7/12/2022</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/01n.png"></li></ul></section>
+        <section>
+            <h2>Paris</h2>
+            <p>Se procedera a mostrar la informacion climatica de Paris actualmente.</p>
+        <ul><li>Numero de elementos del XML: 19</li><li>Ciudad: Paris</li><li>Longitud: 2.3488 grados</li><li>Latitud: 48.8534 grados</li><li>Pais: FR</li><li>Amanece a las: 8:29:47</li><li>Oscurece a las: 16:54:32</li><li>Temperatura: 1.09 grados Celsius</li><li>Temperatura minima: -0.03 grados Celsius</li><li>Temperatura maxima: 2.1 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 97 %</li><li>Presionn: 1021 hPa</li><li>Velocidad del viento: 1.54 metros/segundo</li><li>Nombre del viento: Calm</li><li>Direccionn del viento: undefined grados</li><li>Codigo del viento: undefined</li><li>Nombre del viento: undefined</li><li>Nubosidad: 100</li><li>Nombre nubosidad: overcast clouds</li><li>Visibilidad: 500 metros</li><li>Precipitacion valor: undefined</li><li>Precipitacion modo: no</li><li>Descripcionn: bruma</li><li>Hora de la medida: 3:21:30</li><li>Fecha de la medida: 7/12/2022</li><li>Icono: <img alt="Icono tiempo" src=" http://openweathermap.org/img/w/50n.png"></li></ul></section>
+    </main>
+
+
+</body></html>
