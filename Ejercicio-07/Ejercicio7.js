@@ -15,7 +15,7 @@ class Editor{
     }
     modicicaLista(){
         if(this.controlador){
-            var fila = "<tr><th scope=\"col\" id=\"enlace\" headers=\"enlace\">Nueva fila</th> <td headers=\"enlace\"><a href=\"https://laravel.com\" title=\"Enlace al sitio web oficial\">Sitio web oficial</a></td></tr>";
+            var fila = "<tr><td>Nueva fila</td> <td><a href=\"https://laravel.com\" title=\"Enlace al sitio web oficial\">Sitio web oficial</a></td></tr>";
             $("table:last").append(fila);
         }
         this.controlador = false;
