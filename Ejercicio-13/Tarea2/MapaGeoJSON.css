@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgb(237, 165, 87);
+    color: black;
 }
 /*001*/
 h1 {
@@ -37,6 +38,7 @@ main{
 /*001*/
 section{
     background-color: rgb(209 232 184);
+    color: black;
     padding: 2vw 5vw;
     margin: 10vh;
     border-radius: 10px;
