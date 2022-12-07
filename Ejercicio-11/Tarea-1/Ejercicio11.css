@@ -1,4 +1,4 @@
-/* a=0 b=0 c=1 -> specificity =   1 */
+	/* a=0 b=0 c=1 -> specificity =   1 */
 body{
     color: rgb(0, 0, 0);
     background-color: white;

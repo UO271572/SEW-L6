@@ -22,7 +22,7 @@ class GeoLocalizacion {
         return this.altitud;
     }
     buscarPosicion(){
-        var resultado=''; 
+        var resultado='<h2>Geolocalizar</h2>'; 
         resultado+='<p>Longitud: '+this.longitud +' grados</p>'; 
         resultado+='<p>Latitud: '+this.latitud +' grados</p>';
         resultado+='<p>Precision de la latitud y longitud: '+ this.precision +' metros</p>';
