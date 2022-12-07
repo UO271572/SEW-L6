@@ -9,7 +9,6 @@ body{
 }
 /* a=0 b=0 c=2 -> specificity =   2*/
 body > main {
-    display: flexbox;
     flex-direction: column;
     height: 70vh;
     width: 90vw;
