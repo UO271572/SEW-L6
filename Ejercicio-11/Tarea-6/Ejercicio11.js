@@ -38,7 +38,7 @@ class Loader{
             headers: { 'X-Api-Key': '+YNS3YB6r7AoO73Ebz8Cbg==2ij4mXBDq36kB5PW'},
             contentType: 'application/json',
             success: function(result) {
-                var html="";
+                var html="<h2>Informacion</h2>";
                 console.log(result);
                 html += "<p>Temperatura maxima: "+result.max_temp+"<p/>"
                 html += "<p>Temperatura minima: "+result.min_temp+"<p/>"
